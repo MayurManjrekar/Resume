@@ -4,194 +4,241 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mayur Manjrekar | DevOps Engineer</title>
+  <title>Mayur Manjrekar | Cloud DevOps Engineer</title>
   <script src="https://unpkg.com/feather-icons"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Ambient background texture elements -->
-  <div class="glow-circle top-left"></div>
-  <div class="glow-circle bottom-right"></div>
+  <!-- Animated Background Orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
 
-  <div class="container">
-    <!-- Header / Profile Section -->
-    <div class="profile card">
-      <div class="profile_container">
-        <div class="profile_profileImg">
-          <!-- Replace with your actual image path -->
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">Mayur<span>.dev</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+      <a href="#contact" class="btn primary-btn nav-btn">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="about" class="hero section reveal">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="greeting">Hi, I'm</p>
+        <h1 class="name">Mayur Manjrekar</h1>
+        <h2 class="role">Cloud DevOps Engineer</h2>
+        <p class="description">
+          With over 4 years of experience, I specialize in designing, implementing, and optimizing cloud infrastructure and CI/CD pipelines. I bridge the gap between development and operations to drive innovative, scalable, and zero-downtime solutions.
+        </p>
+        <div class="hero-actions">
+          <!-- Hire Me now scrolls to contact smoothly -->
+          <a href="#contact" class="btn primary-btn"><i data-feather="briefcase"></i> Hire Me</a>
+          <a href="./Mayur_Resume.pdf" download="Mayur_Resume.pdf" class="btn secondary-btn"><i data-feather="download"></i> Download CV</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
           <img src="./images/profile_image.jpg" alt="Mayur Manjrekar">
         </div>
-        <div class="profile_info">
-          <h1 class="profile_name">
-            <span class="profile_name_firstName">Mayur</span>
-            <span class="profile_name_lastName">Manjrekar</span>
-          </h1>
-          <p class="profile_title">Cloud DevOps Engineer</p>
-          <p class="description profile_description">
-            DevOps Engineer with over 4 years of experience in designing, implementing and optimizing cloud infrastructure and CI/CD pipelines. Proven track record in driving innovative solutions, automating complex workflows, and enhancing operational efficiency across environments. Strong cloud expertise with a passion for automation and continuous improvement.
-          </p>
-          <div class="profile_actions">
-            <a class="btn primary-btn" href="./Mayur_Resume.pdf" download="Mayur_Resume.pdf">
-              <i data-feather="download"></i> Download Resume
-            </a>
-            <a class="btn secondary-btn" href="mailto:mayurmanjrekar1999@gmail.com">
-              <i data-feather="mail"></i> Hire Me
-            </a>
-          </div>
-        </div>
       </div>
     </div>
+  </header>
 
-    <!-- Left Column -->
-    <div class="group-1">
-      <!-- Technical Skills -->
-      <div class="skills card">
-        <h3 class="title"><i data-feather="tool"></i> Technical Skills</h3>
-        
-        <h4 class="item_title">Cloud Technologies</h4>
-        <ul class="skills_list description">
-          <li>Google Cloud Platform (GCP)</li>
-          <li>Google Kubernetes Engine (GKE)</li>
-          <li>Cloud Run Functions, Cloud SQL</li>
-          <li>Compute Engine, VPC, IAM</li>
-        </ul>
-        
-        <h4 class="item_title">CI/CD & DevOps Tools</h4>
-        <ul class="skills_list description">
-          <li>Azure DevOps, GitHub Actions</li>
-          <li>Jenkins, SonarQube, Git</li>
-        </ul>
-        
-        <h4 class="item_title">IaC & Scripting</h4>
-        <ul class="skills_list description">
-          <li>Terraform, Ansible, Packer</li>
-          <li>Shell Scripting (Bash), Python, YAML</li>
-        </ul>
-
-        <h4 class="item_title">Containerization & Orchestration</h4>
-        <ul class="skills_list description">
-          <li>Docker, Kubernetes Engine, Helm</li>
-          <li>Istio (Service Mesh), Kubernetes Manifests</li>
-        </ul>
+  <!-- Skills Section -->
+  <section id="skills" class="section reveal">
+    <h2 class="section-title"><i data-feather="cpu"></i> Technical Arsenal</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i data-feather="cloud" class="skill-icon"></i>
+        <h3>Cloud Platform</h3>
+        <p>GCP, GKE, Cloud Run, Cloud SQL, Compute Engine, VPC, Load Balancing, IAM.</p>
       </div>
-
-      <!-- Education -->
-      <div class="edu card">
-        <h3 class="title"><i data-feather="book-open"></i> Education</h3>
-        <div class="edu_item">
-          <p class="item_preTitle">August 2017 - September 2021</p>
-          <h4 class="item_title">Bachelor of Engineering</h4>
-          <p class="item_subtitle">Gogte Institute of Technology, Belagavi</p>
-          <p class="description">CGPA: 8.4</p>
-        </div>
+      <div class="skill-card">
+        <i data-feather="terminal" class="skill-icon"></i>
+        <h3>IaC & Scripting</h3>
+        <p>Terraform, Ansible, Packer, Shell Scripting (Bash), Python, YAML, Linux.</p>
       </div>
-
-      <!-- Certifications -->
-      <div class="certification card">
-        <h3 class="title"><i data-feather="award"></i> Certifications</h3>
-        <ul class="description list">
-          <li>Google Cloud Certified: Professional DevOps Engineer</li>
-          <li>Google Cloud Certified: Associate Cloud Engineer</li>
-          <li>GitHub Foundations</li>
-          <li>GitHub Actions</li>
-        </ul>
+      <div class="skill-card">
+        <i data-feather="refresh-cw" class="skill-icon"></i>
+        <h3>CI/CD & Tools</h3>
+        <p>Azure DevOps, GitHub Actions, Jenkins, SonarQube, Git.</p>
+      </div>
+      <div class="skill-card">
+        <i data-feather="box" class="skill-icon"></i>
+        <h3>Containerization</h3>
+        <p>Docker, Kubernetes (GKE), Helm, Istio (Service Mesh), K8s Manifests.</p>
       </div>
     </div>
+  </section>
 
-    <!-- Right Column -->
-    <div class="group-2">
-      <!-- Professional Experience -->
-      <div class="exp card">
-        <h3 class="title"><i data-feather="briefcase"></i> Professional Experience</h3>
-        
-        <div class="exp_item">
-          <div class="exp_header">
-            <h4 class="item_title">Cloud DevOps Engineer | Globant</h4>
-            <p class="item_preTitle">Dec 2024 - Present</p>
-          </div>
-          <p class="description">Leading the modernization of legacy finance application portfolio by migrating workloads from on-premises and Azure infrastructure to GCP.</p>
-          <ul class="description list">
-            <li>Standardized deployment framework for containerized applications on GKE using Helm and Azure DevOps for robust CI/CD pipelines.</li>
-            <li>Modernized legacy applications using Cloud Run and IAP for zero-trust authentication; streamlined batch jobs via Cloud Functions.</li>
-            <li>Implemented DevSecOps workflow by integrating SonarQube into CI/CD for pull request static code analysis.</li>
-            <li>Optimized containerization resulting in reduced build time by 75% with smaller image size and enhanced security.</li>
-            <li>Reduced operational and infrastructure costs by 16% through resource consumption analysis and workload right-sizing.</li>
-          </ul>
-        </div>
-
-        <div class="exp_item mt-2">
-          <div class="exp_header">
-            <h4 class="item_title">Cloud DevOps Engineer | Cognizant</h4>
-            <p class="item_preTitle">Feb 2022 - Dec 2024</p>
-          </div>
-          <p class="description">Worked on a large-scale cloud migration project for on-premises applications to Google Cloud Platform (GCP).</p>
-          <ul class="description list">
-            <li>Architected zero-downtime deployment strategies to ensure uninterrupted application availability.</li>
-            <li>Designed and automated scalable cloud provisioning using Terraform, streamlining infrastructure management.</li>
-            <li>Leveraged GKE to deploy containerized applications, creating Dockerfiles and Kubernetes manifests.</li>
-            <li>Streamlined Compute image creation using Packer and shell scripts to prune older images within a CI pipeline.</li>
-            <li>Automated deployment processes through robust CI/CD pipelines using Azure DevOps.</li>
+  <!-- Experience Timeline Section -->
+  <section id="experience" class="section reveal">
+    <h2 class="section-title"><i data-feather="activity"></i> Professional Journey</h2>
+    <div class="timeline">
+      
+      <!-- Experience 1 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content card">
+          <span class="date">Dec 2024 - Present</span>
+          <h3>Cloud DevOps Engineer <span>@ Globant</span></h3>
+          <p class="description mb-1">Leading the modernization of legacy finance application portfolios, migrating workloads from on-premises and Azure to GCP.</p>
+          <ul class="bullet-list">
+            <li>Standardized GKE deployments using Helm and Azure DevOps CI/CD.</li>
+            <li>Modernized legacy apps via Cloud Run and IAP for zero-trust authentication; streamlined batches via Cloud Functions.</li>
+            <li>Implemented DevSecOps with SonarQube for static code analysis and quality gates.</li>
+            <li>Reduced build times by 75% by standardizing pre-hardened base images.</li>
+            <li>Reduced operational/infrastructure costs by 16% through resource right-sizing.</li>
           </ul>
         </div>
       </div>
 
-      <!-- Projects -->
-      <div class="projects card">
-        <h3 class="title"><i data-feather="codesandbox"></i> Projects</h3>
-        <div class="exp_item">
-          <h4 class="item_title">3-Tier-GKE-Spanner: GCP Microservices with GitOps</h4>
-          <p class="item_subtitle"><strong>Tools:</strong> GitHub Actions, GKE, Spanner, Terraform, Istio, Prometheus, Grafana</p>
-          <ul class="description list">
-            <li>Designed and deployed a highly scalable microservice application leveraging GCP services and GitOps methodology.</li>
-            <li>Deployed application on a secure, private GKE cluster backed by a scalable Cloud Spanner database.</li>
-            <li>Managed microservices on GKE using Helm and orchestrated Istio for traffic management and security.</li>
-            <li>Integrated Prometheus and Grafana for comprehensive infrastructure monitoring.</li>
+      <!-- Experience 2 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content card">
+          <span class="date">Feb 2022 - Dec 2024</span>
+          <h3>Cloud DevOps Engineer <span>@ Cognizant</span></h3>
+          <p class="description mb-1">Key contributor on a large-scale cloud migration project moving on-premises apps to GCP.</p>
+          <ul class="bullet-list">
+            <li>Architected zero-downtime deployment strategies for uninterrupted availability.</li>
+            <li>Automated scalable cloud provisioning using Terraform.</li>
+            <li>Deployed containerized applications on GKE using efficient Dockerfiles and K8s manifests.</li>
+            <li>Streamlined CI pipeline image creation with Packer, pruning older images automatically.</li>
+            <li>Recognized with the <strong>Sapphire Award</strong> (Budding Star) and <strong>Coral Award</strong> for flawless engagement delivery.</li>
           </ul>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Achievements -->
-      <div class="awards card">
-        <h3 class="title"><i data-feather="star"></i> Achievements</h3>
-        <div class="awards_item">
-          <h4 class="item_title">Sapphire Award</h4>
-          <p class="description"><strong>Budding Star in the project (Cognizant).</strong> Recognized for exceptional dedication and expertise in GCP and Azure DevOps, consistently delivering high-quality solutions and meeting tight deadlines.</p>
+  <!-- Projects & Achievements -->
+  <section id="projects" class="section reveal">
+    <h2 class="section-title"><i data-feather="star"></i> Featured Work & Achievements</h2>
+    <div class="bento-grid">
+      
+      <div class="bento-card span-2">
+        <div class="card-header">
+          <h3>3-Tier GKE Spanner Application</h3>
+          <a href="https://github.com/MayurManjrekar" target="_blank"><i data-feather="github"></i></a>
         </div>
-        <div class="awards_item mt-2">
-          <h4 class="item_title">Published Article</h4>
-          <p class="description">Authored <strong>"Infrastructure Automation: The GitOps Way"</strong> in Globant’s Medium publication, sharing insights on modern DevOps practices and automation strategies.</p>
+        <p class="tag">GCP Microservices with GitOps and Service Mesh</p>
+        <p class="description mt-1">
+          Designed and deployed a highly scalable microservice application leveraging GCP services. Deployed on a secure, private GKE cluster backed by Cloud Spanner. Orchestrated Istio for traffic management/security and integrated Prometheus/Grafana for full-stack monitoring.
+        </p>
+        <div class="tech-stack">
+          <span>GitHub Actions</span><span>GKE</span><span>Spanner</span><span>Terraform</span><span>Istio</span>
+        </div>
+      </div>
+
+      <div class="bento-card">
+        <i data-feather="book-open" class="accent-icon"></i>
+        <h3>Published Article</h3>
+        <p class="description mt-1">
+          Authored <strong>"Infrastructure Automation: The GitOps Way"</strong> in Globant’s Medium publication, sharing insights on modern DevOps practices and automation strategies.
+        </p>
+      </div>
+
+      <div class="bento-card">
+        <i data-feather="award" class="accent-icon"></i>
+        <h3>Certifications</h3>
+        <ul class="bullet-list mt-1">
+          <li>GCP: Professional DevOps Engineer</li>
+          <li>GCP: Associate Cloud Engineer</li>
+          <li>GitHub Foundations & Actions</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section reveal">
+    <div class="contact-box card">
+      <h2>Let's Build Something Great Together</h2>
+      <p class="description text-center">I'm currently open for new opportunities. Whether you have a question or just want to say hi, my inbox is always open!</p>
+      
+      <div class="contact-methods mt-2">
+        <div class="contact-item" onclick="copyEmail()">
+          <i data-feather="mail"></i>
+          <div>
+            <h4>Email Me</h4>
+            <p id="email-text">mayurmanjrekar1999@gmail.com</p>
+          </div>
+          <span class="copy-badge" id="copy-badge">Click to Copy</span>
+        </div>
+
+        <a href="https://www.linkedin.com/in/MayurManjrekar" target="_blank" class="contact-item">
+          <i data-feather="linkedin"></i>
+          <div>
+            <h4>LinkedIn</h4>
+            <p>Connect with me</p>
+          </div>
+        </a>
+
+        <div class="contact-item">
+          <i data-feather="map-pin"></i>
+          <div>
+            <h4>Location</h4>
+            <p>Bangalore, Karnataka</p>
+          </div>
         </div>
       </div>
     </div>
-    
-    <!-- Footer / Contact Row -->
-    <div class="group-3 card">
-      <div class="contact">
-        <h3 class="title"><i data-feather="map-pin"></i> Contact</h3>
-        <div class="contact_info mt-1">
-          <p class="description flex-center"><i data-feather="map"></i> Bangalore, Karnataka</p>
-          <p class="description flex-center"><i data-feather="phone"></i> +91 6360659809</p>
-          <p class="description flex-center"><i data-feather="mail"></i> mayurmanjrekar1999@gmail.com</p>
-        </div>
-      </div>
-      <div class="social">
-        <h3 class="title"><i data-feather="share-2"></i> Socials</h3>
-        <div class="social_items mt-1">
-          <a href="https://github.com/MayurManjrekar" target="_blank" class="social_item">
-            <i data-feather="github"></i>
-            <span>GitHub Profile</span>
-          </a>
-          <a href="https://www.linkedin.com/in/MayurManjrekar" target="_blank" class="social_item">
-            <i data-feather="linkedin"></i>
-            <span>LinkedIn Profile</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+  </section>
+
+  <footer>
+    <p>© 2026 Mayur Manjrekar. Built with GitHub Actions.</p>
+  </footer>
+
   <script>
-    feather.replace()
+    // Initialize Icons
+    feather.replace();
+
+    // Scroll Reveal Animation Observer
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealOptions = { threshold: 0.15, rootMargin: "0px 0px -50px 0px" };
+    
+    const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // Run once
+      });
+    }, revealOptions);
+
+    revealElements.forEach(el => revealOnScroll.observe(el));
+
+    // Smooth Scrolling for Nav Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Copy Email to Clipboard Feature
+    function copyEmail() {
+      const email = document.getElementById("email-text").innerText;
+      navigator.clipboard.writeText(email).then(() => {
+        const badge = document.getElementById("copy-badge");
+        badge.innerText = "Copied!";
+        badge.style.background = "#10b981"; // Green color
+        setTimeout(() => {
+          badge.innerText = "Click to Copy";
+          badge.style.background = "rgba(255, 118, 19, 0.2)";
+        }, 2000);
+      });
+    }
   </script>
 </body>
 </html>
